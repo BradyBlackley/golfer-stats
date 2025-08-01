@@ -1,24 +1,23 @@
 package com.golfer.demo.controller;
 
-import com.golfer.demo.models.pojos.Stroke;
-import com.golfer.demo.service.stroke.StrokeService;
+import com.golfer.demo.models.pojos.Putt;
+import com.golfer.demo.service.putt.PuttService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/stroke")
+@RequestMapping("/api/putt")
 @CrossOrigin(origins = "http://localhost:3000")
-public class StrokeController {
+public class PuttController {
 
     @Autowired
-    private StrokeService service;
+    private PuttService service;
 
-    @PostMapping("/addStroke")
-    public ResponseEntity<Stroke> add(@RequestBody Stroke stroke){
-        var body = service.add(stroke);
+    @PostMapping("/addPutt")
+    public ResponseEntity<Putt> add(@RequestBody Putt putt){
+        var body = service.add(putt);
         return ResponseEntity.status(HttpStatus.CREATED).body(body);
     }
-
 }

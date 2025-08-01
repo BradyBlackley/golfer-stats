@@ -1,40 +1,37 @@
 package com.golfer.demo.models.pojos;
 
-import com.golfer.demo.models.enums.BallFlightType;
 import com.golfer.demo.models.enums.Club;
-import com.golfer.demo.models.enums.ContactType;
+import com.golfer.demo.models.enums.PuttResult;
 
 import java.time.LocalDate;
 
-public class Stroke {
+public class Putt {
     private String id;
     private String playerId;
     private Club club;
     private Integer distance;
-    private ContactType contactType;
-    private BallFlightType ballFlightType;
+    private PuttResult puttResult;
     private LocalDate date;
 
-    public Stroke(String id, String playerId, Club club, Integer distance, ContactType contactType, BallFlightType ballFlightType, LocalDate date) {
+    public Putt(String id, String playerId, Club club, Integer distance, PuttResult puttResult, LocalDate date) {
         this.id = id;
         this.playerId = playerId;
         this.club = club;
         this.distance = distance;
-        this.contactType = contactType;
-        this.ballFlightType = ballFlightType;
+        this.puttResult = puttResult;
         this.date = date;
     }
 
-    public Stroke(String playerId, Club club, Integer distance, ContactType contactType, BallFlightType ballFlightType, LocalDate date) {
+    public Putt(String playerId, Club club, Integer distance, PuttResult puttResult, LocalDate date) {
         this.playerId = playerId;
         this.club = club;
         this.distance = distance;
-        this.contactType = contactType;
-        this.ballFlightType = ballFlightType;
+        this.puttResult = puttResult;
         this.date = date;
     }
 
-    public Stroke() {
+    public Putt(){
+
     }
 
     public String getId() {
@@ -69,20 +66,12 @@ public class Stroke {
         this.distance = distance;
     }
 
-    public ContactType getContactType() {
-        return contactType;
+    public PuttResult getPuttResult() {
+        return puttResult;
     }
 
-    public void setContactType(ContactType contactType) {
-        this.contactType = contactType;
-    }
-
-    public BallFlightType getBallFlightType() {
-        return ballFlightType;
-    }
-
-    public void setBallFlightType(BallFlightType ballFlightType) {
-        this.ballFlightType = ballFlightType;
+    public void setPuttResult(PuttResult puttResult) {
+        this.puttResult = puttResult;
     }
 
     public LocalDate getDate() {
@@ -95,13 +84,12 @@ public class Stroke {
 
     @Override
     public String toString() {
-        return "Stroke{" +
+        return "Putt{" +
                 "id='" + id + '\'' +
                 ", playerId='" + playerId + '\'' +
                 ", club=" + club +
                 ", distance=" + distance +
-                ", contactType=" + contactType +
-                ", ballFlightType=" + ballFlightType +
+                ", puttResult=" + puttResult +
                 ", date=" + date +
                 '}';
     }

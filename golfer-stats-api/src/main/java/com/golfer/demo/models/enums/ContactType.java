@@ -18,7 +18,6 @@ public enum ContactType {
     private final Integer id;
     private final String label;
 
-
     ContactType(Integer id, String label) {
         this.id = id;
         this.label = label;
