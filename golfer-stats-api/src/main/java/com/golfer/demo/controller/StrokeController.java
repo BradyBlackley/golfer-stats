@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/stroke")
@@ -16,9 +18,15 @@ public class StrokeController {
     private StrokeService service;
 
     @PostMapping("/addStroke")
-    public ResponseEntity<Stroke> add(@RequestBody Stroke stroke){
-        var body = service.add(stroke);
-        return ResponseEntity.status(HttpStatus.CREATED).body(body);
+    public ResponseEntity<?> add(@RequestBody Stroke stroke) {
+        var created = service.add(stroke);
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("success", true);
+        response.put("message", "Shot data added successfully!");
+        response.put("data", created);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
 }

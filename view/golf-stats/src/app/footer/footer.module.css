@@ -1,0 +1,31 @@
+.footer {
+    border: solid;
+    border-color: black;
+    border-radius: 20px;
+    width: auto;
+    background-color: #4b554f;
+    color: #eeeeee;
+    justify-content: center;
+}
+
+.footerBtn {
+    color: #eeeeee;
+}
+
+/* Color Palette
+.swamp-green { 
+	background: #b4c593; 
+}
+	
+.nile-blue { 
+	background: #183848; 
+}
+
+.sycamore { 
+	background: #858c36; 
+}
+
+.nandor { 
+	background: #4b554f; 
+}
+*/

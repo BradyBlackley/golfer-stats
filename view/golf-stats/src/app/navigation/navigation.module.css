@@ -1,0 +1,28 @@
+.navigationBar {
+    border: solid;
+    border-color: black;
+    border-radius: 20px;
+    width: auto;
+    background-color: #183848;
+    color: #eeeeee;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* Color Palette
+.swamp-green { 
+	background: #b4c593; 
+}
+	
+.nile-blue { 
+	background: #183848; 
+}
+
+.sycamore { 
+	background: #858c36; 
+}
+
+.nandor { 
+	background: #4b554f; 
+}
+*/
