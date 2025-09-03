@@ -101,14 +101,14 @@ export default function AddPutt() {
             </tr>
             <tr>
               <td>
-                <label>Choose a club:</label>
+                <label htmlFor="clubs">Choose a club:</label>
                 <select
                   name="clubs"
                   id="clubs"
                   value={club}
                   onChange={(e) => setClub(e.target.value)}
                 >
-                  <option value="PUTTER" selected>
+                  <option value="PUTTER">
                     Putter
                   </option>
                 </select>
@@ -135,7 +135,7 @@ export default function AddPutt() {
                   value={puttResult}
                   onChange={(e) => setPuttResult(e.target.value)}
                 >
-                  <option value="null" selected></option>
+                  <option value="null"></option>
                   <option value="SINK">Sink</option>
                   <option value="MISS_WITHIN_GIMME_RANGE">
                     Miss Hit - Within Gimme Range
@@ -160,7 +160,7 @@ export default function AddPutt() {
         </table>
         <div className="justify-content-md-center input-group-prepend">
           <button
-            className="btn btn-outline-secondary"
+            className="bg-sky-500 hover:bg-sky-700"
             type="submit"
             id="button-addon1"
           >

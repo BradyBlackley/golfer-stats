@@ -1,19 +1,14 @@
 import Image from "next/image";
 import logoFilePath from "./tempLogo.jpg"
-import styles from "./banner.module.css"
 
-type BannerProps = {
-    headerText: string;
-};
-
-const Banner = ({headerText}: BannerProps) => {
+const Banner = () => {
     return (
-        <div className={"row mb-1 " + styles.banner}>
-            <div className="col-5">
-                <Image src={logoFilePath} alt="logo" className={styles.logo} />
+        <div className="flex justify-center bg-[#b4c593] border border-solid border-black rounded-md ">
+            <div className="mr-auto  ">
+                <Image src={logoFilePath} alt="logo" className="h-20 w-auto " />
             </div>
-            <div className="col-7 mt-5">
-                {headerText}
+            <div className="mr-auto  mt-auto mb-auto text-2xl font-bold text-gray-800 ">
+                <p>Golf Stats</p>
             </div>
         </div>
     );

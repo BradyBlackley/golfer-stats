@@ -1,17 +1,14 @@
-import styles from "./footer.module.css"
 import Link from 'next/link'
 
 const Footer = () => {
     
     return (
-        <div className={"row " + styles.footer}>
-            <div className="btn-group" role="group">
-                <Link href="social-media-plugins" className={"btn " + styles.footerBtn}>Social Media Plugins</Link>
-                <Link href="building-this-app" className={"btn " + styles.footerBtn}>Building This App</Link>
-                <Link href="about-me" className={"btn " + styles.footerBtn}>About Me</Link>
-                <Link href="contact" className={"btn " + styles.footerBtn}>Contact</Link>
-                <Link href="help" className={"btn " + styles.footerBtn}>Help</Link>
-            </div>
+        <div className="flex justify-between bg-[#4b554f] border border-solid border-black rounded-md ">
+            <Link href="social-media-plugins" className="rounded-lg text-white px-3 py-2 hover:bg-[#858c36] hover:text-gray-900 ">Social Media Plugins</Link>
+            <Link href="building-this-app" className="rounded-lg text-white px-3 py-2 hover:bg-[#858c36] hover:text-gray-900 ">Building This App</Link>
+            <Link href="about-me" className="rounded-lg text-white px-3 py-2 hover:bg-[#858c36] hover:text-gray-900 ">About Me</Link>
+            <Link href="contact" className="rounded-lg text-white px-3 py-2 hover:bg-[#858c36] hover:text-gray-900 ">Contact</Link>
+            <Link href="help" className="rounded-lg text-white px-3 py-2 hover:bg-[#858c36] hover:text-gray-900 ">Help</Link>
         </div>
     );
 };

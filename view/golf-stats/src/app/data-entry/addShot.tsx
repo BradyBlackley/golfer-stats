@@ -114,7 +114,7 @@ export default function AddShot() {
                   value={club}
                   onChange={(e) => setClub(e.target.value)}
                 >
-                  <option value="null" selected></option>
+                  <option value="null"></option>
                   <option value="DRIVER">Driver</option>
                   <option value="THREE_WOOD">3-Wood</option>
                   <option value="THREE_HYBRID">3-Hybrid</option>
@@ -141,7 +141,7 @@ export default function AddShot() {
                   value={contactType}
                   onChange={(e) => setContactType(e.target.value)}
                 >
-                  <option value="null" selected></option>
+                  <option value="null"></option>
                   <option value="FLUSH">
                     Flush
                   </option>
@@ -162,7 +162,7 @@ export default function AddShot() {
                   value={ballFlightType}
                   onChange={(e) => setBallFlightType(e.target.value)}
                 >
-                  <option value="null" selected></option>
+                  <option value="null"></option>
                   <option value="STRAIGHT">Straight</option>
                   <option value="STRAIGHT_DRAW">Straight Draw</option>
                   <option value="STRAIGHT_FADE">Straight Fade</option>
@@ -204,7 +204,7 @@ export default function AddShot() {
         </table>
         <div className="justify-content-md-center input-group-prepend">
           <button
-            className="btn btn-outline-secondary"
+            className="bg-sky-500 hover:bg-sky-700"
             type="submit"
             id="button-addon1"
           >

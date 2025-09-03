@@ -239,88 +239,106 @@ export default async function Page() {
   const puttingAccuracy15Feet = await res16.json();
 
   return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Club</th>
-            <th>Average Distance</th>
+    <div className="relative overflow-x-auto ">
+      <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400 mb-12 ">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400 ">
+          <tr >
+            <th scope="col" className="px-6 py-3">Club</th>
+            <th scope="col" className="px-6 py-3">My Avg. Distance</th>
+            <th scope="col" className="px-6 py-3">Average Pro Distance</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Driver</td>
-            <td>{avgDriver}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="9.5&deg; loft, 45 in. shaft">Driver</th>
+            <td className="px-6 py-4">{avgDriver}Y</td>
+            <td className="px-6 py-4">282Y</td>
           </tr>
-          <tr>
-            <td>3-Wood</td>
-            <td>{avgThreeWood}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="15&deg; loft, 43 in. shaft">3-Wood</th>
+            <td className="px-6 py-4">{avgThreeWood}Y</td>
+            <td className="px-6 py-4">249Y</td>
           </tr>
-          <tr>
-            <td>3-Hybrid</td>
-            <td>{avgThreeHybrid}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="18.5&deg; loft, 41 in. shaft">3-Hybrid</th>
+            <td className="px-6 py-4">{avgThreeHybrid}Y</td>
+            <td className="px-6 py-4">230Y</td>
           </tr>
-          <tr>
-            <td>4-Iron</td>
-            <td>{avgFourIron}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="21&deg; loft, 39.25 in. shaft">4-Iron</th>
+            <td className="px-6 py-4">{avgFourIron}Y</td>
+            <td className="px-6 py-4">209Y</td>
           </tr>
-          <tr>
-            <td>5-Iron</td>
-            <td>{avgFiveIron}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="24&deg; loft, 38.5 in. shaft">5-Iron</th>
+            <td className="px-6 py-4">{avgFiveIron}Y</td>
+            <td className="px-6 py-4">199Y</td>
           </tr>
-          <tr>
-            <td>6-Iron</td>
-            <td>{avgSixIron}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="27&deg; loft, 37.75 in. shaft">6-Iron</th>
+            <td className="px-6 py-4">{avgSixIron}Y</td>
+            <td className="px-6 py-4">188Y</td>
           </tr>
-          <tr>
-            <td>7-Iron</td>
-            <td>{avgSevenIron}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="31&deg; loft, 37.25 in. shaft">7-Iron</th>
+            <td className="px-6 py-4">{avgSevenIron}Y</td>
+            <td className="px-6 py-4">176Y</td>
           </tr>
-          <tr>
-            <td>8-Iron</td>
-            <td>{avgEightIron}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="35&deg; loft, 36.75 in. shaft">8-Iron</th>
+            <td className="px-6 py-4">{avgEightIron}Y</td>
+            <td className="px-6 py-4">164Y</td>
           </tr>
-          <tr>
-            <td>9-Iron</td>
-            <td>{avgNineIron}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="40&deg; loft, 36.25 in. shaft">9-Iron</th>
+            <td className="px-6 py-4">{avgNineIron}Y</td>
+            <td className="px-6 py-4">152Y</td>
           </tr>
-          <tr>
-            <td>P-Wedge</td>
-            <td>{avgP_Wedge}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="45&deg; loft, 35.5 in. shaft">P-Wedge</th>
+            <td className="px-6 py-4">{avgP_Wedge}Y</td>
+            <td className="px-6 py-4">140Y</td>
           </tr>
-          <tr>
-            <td>Gap-Wedge</td>
-            <td>{avgGap_Wedge}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="50&deg; loft, 35.5 in. shaft">Gap-Wedge</th>
+            <td className="px-6 py-4">{avgGap_Wedge}Y</td>
+            <td className="px-6 py-4">128Y</td>
           </tr>
-          <tr>
-            <td>Sand-Wedge</td>
-            <td>{avgSand_Wedge}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="56&deg; loft, 35.5 in. shaft">Sand-Wedge</th>
+            <td className="px-6 py-4">{avgSand_Wedge}Y</td>
+            <td className="px-6 py-4">118Y</td>
           </tr>
-          <tr>
-            <td>Loft-Wedge</td>
-            <td>{avgLoft_Wedge}Y</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white " title="60&deg; loft, 34.75 in. shaft">Loft-Wedge</th>
+            <td className="px-6 py-4">{avgLoft_Wedge}Y</td>
+            <td className="px-6 py-4">105Y</td>
           </tr>
         </tbody>
       </table>
-      <table>
-        <thead>
+      <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400 mb-12 ">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400 ">
           <tr>
-            <th>Putting Distance</th>
-            <th>Average Accuracy</th>
+            <th scope="col" className="px-6 py-3">Putting Distance</th>
+            <th scope="col" className="px-6 py-3">My Avg. Accuracy</th>
+            <th scope="col" className="px-6 py-3">Average Pro Accuracy</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Putting accuracy from 5 feet</td>
-            <td>{puttingAccuracy5Feet}%</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white ">5 feet</th>
+            <td className="px-6 py-4">{puttingAccuracy5Feet}%</td>
+            <td className="px-6 py-4">77%</td>
           </tr>
-          <tr>
-            <td>Putting accuracy from 10 feet</td>
-            <td>{puttingAccuracy10Feet}%</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white ">10 feet</th>
+            <td className="px-6 py-4">{puttingAccuracy10Feet}%</td>
+            <td className="px-6 py-4">40%</td>
           </tr>
-          <tr>
-            <td>Putting accuracy from 15 feet</td>
-            <td>{puttingAccuracy15Feet}%</td>
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 ">
+            <th scope="row" className ="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white ">15 feet</th>
+            <td className="px-6 py-4">{puttingAccuracy15Feet}%</td>
+            <td className="px-6 py-4">23%</td>
           </tr>
         </tbody>
       </table>
