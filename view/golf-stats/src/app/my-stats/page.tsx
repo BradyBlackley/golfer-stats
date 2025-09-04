@@ -239,7 +239,7 @@ export default async function Page() {
   const puttingAccuracy15Feet = await res16.json();
 
   return (
-    <div className="relative overflow-x-auto ">
+    <div className="relative overflow-x-auto m-4 ">
       <table className="w-full text-sm text-left rtl:text-right dark:text-gray-400 mb-12 ">
         <thead className="text-xs text-gray-700 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400 ">
           <tr >
