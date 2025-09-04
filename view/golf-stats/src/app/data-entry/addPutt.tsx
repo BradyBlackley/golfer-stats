@@ -134,7 +134,7 @@ export default function AddPutt() {
                 </div>
               </div>
 
-              <div className="sm:col-span-2 sm:col-start-1">
+              <div className="sm:col-span-2">
                 <label
                   htmlFor="puttDistance"
                   className="block text-sm/6 font-medium text-gray-900"
